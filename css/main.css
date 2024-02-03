@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+
+
+#navbar {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+#navbar .navlogo {
+padding-block: 5px;
+padding-left: 80px;
+}
+
+
+
+#navbar .navlinks li {
+    display: inline-block;
+    padding-inline: 5px;
+    padding-top: 18px;
+}
+
+
+
+#navbar .navlinks a {
+    color: rgba(128, 128, 128, 0.704);
+}
+
+
+#navbar .navlinks a:hover {
+    color: black;
+    border-bottom: 2px solid red;
+}
+
+
+#navbar .navicon {
+    padding-top: 20px;
+    padding-right: 80px;
+}
+
+
+
+
+#Home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    background-color: #EEEEEE;
+    padding-block: 30px;
+}
+
+
+#Home .section1 {
+    width: 50%;
+    padding-left: 70px;
+    
+}
+
+#Home .section1 h2,#Home .section1 p {
+    padding-block: 3px;
+    
+}
+
+
+
+#Home .section1 h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 65px;
+}
+#Home .section1 .button1 {
+    
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #CE1212;
+    color: white;
+    font-weight: 600;
+    border-top-left-radius: 2px ;
+   
+    transition: all 1s  ;
+}
+
+#Home .section1 .button1:hover {
+    background-color: #E61414;
+}
+
+
+ #Home .section1 .button2 span  {
+    width: 50px;
+   
+    height: 50px;
+    background-color: white;
+    border-radius: 40%;
+    padding-left: 18px;
+    padding-top: 5px;
+    margin-top: 4px;
+    position: relative;
+    /* background-image: linear-gradient(red 100%  ); */
+}
+
+
+
+
+#Home .section1 .button2 {
+    margin-left: 10px;
+    padding: 15px;
+    /* background-color: #CE1212; */
+    color: rgba(0, 0, 0, 0.826);
+    font-weight: 600;
+    border: none;
+/*     
+    border-radius: 15px;
+    border-top-left-radius: 2px ; */
+    transition: all 1s  ;
+}
+#Home .section1 .button2 i {
+    padding-right: 20px;
+    
+}
+
+
+
+#Home .section1 .button2:hover {
+    color: #E61414;
+}
+
+
+#Home .section2 {
+    width: 50%;
+    padding-top: 70px;
+    padding-left: 80px;
+    
+    
+    /* padding-left: 80px; */
+}
+
+
+#Home .section2 img {
+   width: 80%; 
+   transition: all 1s;
+   
+}
+
+
+#Home .section2 img:hover {
+    transform: rotate(360deg);
+    
+}
+
+
+
+
+/* #chefs {
+
+} */
+
+
+#chefs .aboutchefs {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+
+
+#chefs .aboutchefs .font  {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+    
+}
+
+
+#chefs .aboutchefs span {
+    color: #a81717;
+}
+
+
+
+#chefs .chefspic {
+    display: flex;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+
+
+#chefs  .chef {
+    width: 33%;
+    padding-inline: 20px;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+#chefs  .chef img {
+    width: 100%;
+}
+
+
+
+
+#chefs  .chef:hover {
+    transform: scale(1.1);
+}
+
+
+
+#chefs  .chef .icons {
+    position: absolute;
+    padding: 10px;
+    border-radius: 4px;
+    top: 10%;
+    left: 100%;
+    background-color: rgba(128, 128, 128, 0.532);
+    transition: all 1s;
+}
+
+
+
+#chefs  .chef:hover .icons {
+    left:80%
+}
+
+
+#chefs  .chef:hover .icons li {
+    padding: 5px;
+}
+
+
+
+#Gallery {
+    padding: 20px;
+    text-align: center;
+    background-color: #EEEEEE;
+}
+#Gallery .col {
+    color: #E61414;
+}
+#Gallery .Holder .box img {
+    width: 100%;
+    border: 2px solid white;
+   
+}
+
+
+
+
+#Gallery .Holder {
+    columns: 3;
+}
+
+
+#Gallery  h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+}
+
+#Gallery .Holder .box {
+    position: relative;
+    overflow: hidden;
+    /* padding: 10px; */
+    
+    
+}
+
+#Gallery .Holder .box .lyear {
+    background-color: rgba(0, 0, 0, 0.549);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    
+    transition: all 1s ;
+   
+    
+}
+
+
+#Gallery .Holder .box .lyear .lyear-out {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#Gallery .Holder .box:hover .lyear {
+    top: 0;
+    left: 0;
+    
+}
+
+
+
+
+
+
+#contact {
+    padding: 40px;
+    background-color: #FFFFFF;
+}
+
+
+#contact h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+
+}
+
+
+#contact .title {
+    text-align: center;
+    padding: 20px;
+}
+
+#contact .title .col2 {
+    color: #CE1212;
+}
+
+
+
+
+#contact .divholder {
+margin-top: 80px;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+
+
+
+
+
+
+#contact .divholder span {
+    background-color: #ed0a0ace;
+    border-radius: 50%;
+    width: 40px;
+    height: 30px;
+}
+
+
+#contact .divholder span i {
+    padding-left: 10px;
+    padding-top: 5px ;
+    color: white;
+   
+}
+
+
+
+
+#contact .divholder .div {
+    width: 50%;
+    background-color: #F5F5F5;
+    border: 5px solid white;
+    display: flex;
+    padding: 30px;
+}
+
+
+
+
+#contact .form {
+    padding: 5px;
+    background-color: #FFFFFF;
+}
+#contact .form .form1 {
+    padding-top: 20px;
+    margin-left: 1px;
+    display: flex;
+}
+
+
+
+#contact  .form .form1 input {
+   width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-inline: 3px ;
+}
+
+
+
+
+
+
+#contact  .form .form2 {
+padding-top: 20px;
+margin-left: 1px;
+}
+
+
+
+#contact  .form .form2 input {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+}
+
+
+
+
+#contact  .form .form2 textarea {
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px;
+}
+
+#contact .form .button3 {
+    width: 100%;
+    text-align: center;
+}
+
+
+#contact .form .button3  button{
+    background-color: #CE1212;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    transition: all 1s;
+}
+
+
+/* #contact form{
+    justify-content: center;
+} */
+
+
+
+#contact .form .button3  button:hover {
+    background-color: #E61414;
+}
+
+
+#last {
+     /* padding-left: 80px; */
+    padding-block: 80px; 
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+#last .lastone .pic img {
+    width: 50px;
+}
+
+
+#last .lastone .text {
+    color: white;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+
+#last .lastone .pic  {
+    display: flex;
+    /* padding-left:60px ; */
+    color: white;
+}
+
+#last .lastone .pic h2 {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+#last .desc {
+    margin-top: 20px;
+}
+
+#last .desc p {
+    color: #FFFFFF;
+}
+
+
+
+#last .media h2 {
+    padding-top: 30px;
+    padding-left: 80px;
+    color: #fff;
+    border-bottom: #fff solid 2px;
+    
+}
+
+#last .media ul {
+    display: flex;
+    
+}
+
+#last .media ul li {
+    color: white;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: large;
+}
+
+
+
+#last .second h2 {
+    color: white;
+    padding-left: 40px;
+    padding-top: 8px;
+}
+
+
+
+#last .second p {
+    color: white;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+
+
+#last .second .email {
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+
+#last .second .email input {
+    padding: 9px;
+    width: 80%;
+}
+
+
+
+
+#last .second .email button {
+    padding: 9px;
+    background-color: #E61414;
+    color: #fff;
+}
+
+
+#last .second .email button i {
+    padding-inline: 5px;
+}
+
+
+#last .second h3 {
+    color: white;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+
+
+#last  .second .uldiv ul {
+margin-top: 10px;
+
+}
+#last  .second .uldiv ul li {
+    color: white;
+    padding-left: 40px;
+    margin-top: 5px;
+    position: relative;
+    transition: all 1s;
+    
+    
+    
+}
+
+
+#last  .second .uldiv ul li .lilyear {
+    background-color: rgba(128, 128, 128, 0.262);
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+#last  .second .uldiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#last  .second .uldiv ul li:hover {
+    transform: translateX(20px);
+}
+
+
+#last  .second .uldiv ul li:hover .lilyear {
+    opacity: 1;
+}
+
+
+
+
+#last .third h3 {
+    color: #fff;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+
+
+#last .third .address {
+    color: #fff;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+
+
+#last .third .address p {
+    padding-block: 5px;
+}
+
+
+
+
+#last .third .address p i {
+    color: red;
+}
+
+
+
+
+
